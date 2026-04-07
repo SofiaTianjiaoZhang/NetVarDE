@@ -3,3 +3,4 @@
 export(NetVarDE_Infer)
 export(evaluate_power_law_fit)
 export(power_law_selection)
+export(preprocess_W)

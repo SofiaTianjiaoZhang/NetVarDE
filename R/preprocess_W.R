@@ -19,6 +19,7 @@
 #' # Align: adds gene9 and gene10 as zero rows/columns
 #' W_aligned <- preprocess_W(de, W)
 #' }
+#' @export
 preprocess_W <- function(de, W){
   W_zeros <- rownames(de)[!rownames(de) %in% rownames(W)]
   W1 <- Matrix(0, nrow = dim(W)[1]+length(W_zeros), ncol = dim(W)[1]+length(W_zeros), sparse = TRUE)
